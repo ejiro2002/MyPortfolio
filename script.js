@@ -148,7 +148,12 @@ class Navigation {
     }
 
     setupSmoothScroll() {
-        this.navLinks.forEach(link => {
+        const smoothLinks = [
+            ...this.navLinks,
+            ...document.querySelectorAll('.hero-buttons a[href^="#"], .about-cta[href^="#"], .footer-link[href^="#"]')
+        ];
+
+        smoothLinks.forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 const target = link.getAttribute('href');
@@ -224,16 +229,6 @@ class ScrollEnhancements {
     }
 
     init() {
-        // Prevent scroll behavior on hash links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', (e) => {
-                const href = anchor.getAttribute('href');
-                if (href !== '#' && document.querySelector(href)) {
-                    e.preventDefault();
-                }
-            });
-        });
-
         // Add scroll performance optimization
         this.optimizeScrollPerformance();
     }
@@ -350,14 +345,8 @@ class ButtonInteractions {
     }
 
     setupCVDownload() {
-        const cvButton = document.querySelector('.btn-secondary');
-        if (cvButton) {
-            cvButton.addEventListener('click', (e) => {
-                // Placeholder for CV download logic
-                // In production, replace with actual CV file path
-                console.log('CV download requested');
-            });
-        }
+        // Existing CV button behavior is handled by the native download attribute.
+        // No custom click interception is needed.
     }
 }
 
@@ -367,8 +356,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const typedText = document.getElementById('typedText');
     if (typedText) {
         new TypingAnimation(typedText, [
+            'Frontend Developer & UI Enthusiast',
             'Frontend Developer',
-            'Web Developer',
             'UI Enthusiast'
         ], 80, 2000);
     }
