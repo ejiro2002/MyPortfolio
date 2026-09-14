@@ -3269,3 +3269,509 @@ a:focus-visible {
     }
 
 }
+
+
+/* =========================================================
+   ABOUT SECTION
+   REFERENCE DESIGN OVERRIDE
+   ========================================================= */
+
+.portfolio-about {
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+
+    overflow: hidden;
+
+    background: #080a0c;
+
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+
+    isolation: isolate;
+}
+
+
+/* ---------- BACKGROUND ---------- */
+
+.portfolio-about::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 75% 50%,
+            rgba(255,255,255,0.025),
+            transparent 45%
+        ),
+        #080a0c;
+
+    z-index: -3;
+}
+
+
+.portfolio-about-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5,7,8,0.96) 0%,
+            rgba(5,7,8,0.88) 45%,
+            rgba(5,7,8,0.45) 75%,
+            rgba(5,7,8,0.72) 100%
+        );
+
+    z-index: -1;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   MAIN ABOUT CONTENT
+   ========================================================= */
+
+.portfolio-about-content {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+
+    grid-template-columns: 47% 53%;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   LEFT SIDE
+   ========================================================= */
+
+.portfolio-about-copy {
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    padding-left: 9%;
+
+    padding-right: 5%;
+
+    margin-top: -20px;
+}
+
+
+.portfolio-about-copy h2 {
+    margin: 0 0 4px;
+
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: 0;
+}
+
+
+.portfolio-about-email {
+    margin: 0;
+
+    color: rgba(255,255,255,0.60);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+/* ---------- DESCRIPTION ---------- */
+
+.portfolio-about-description {
+    width: 270px;
+
+    margin-top: 38px;
+}
+
+
+.portfolio-about-description p {
+    margin: 0 0 10px;
+
+    color: rgba(255,255,255,0.82);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 400;
+
+    line-height: 1.45;
+
+    letter-spacing: 0;
+}
+
+
+.portfolio-about-description p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   PORTRAIT
+   ========================================================= */
+
+.portfolio-about-portrait {
+    position: relative;
+
+    align-self: stretch;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+}
+
+
+.portfolio-about-portrait::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            #080a0c 0%,
+            rgba(8,10,12,0.72) 13%,
+            rgba(8,10,12,0.12) 38%,
+            rgba(8,10,12,0) 65%
+        );
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+.portfolio-about-portrait img {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center center;
+
+    display: block;
+
+    filter:
+        grayscale(100%)
+        contrast(1.12)
+        brightness(0.74);
+
+    opacity: 0.92;
+
+    z-index: 1;
+}
+
+
+/* =========================================================
+   LOCATION
+   ========================================================= */
+
+.portfolio-about-location {
+    position: absolute;
+
+    left: 22%;
+
+    bottom: 17px;
+
+    z-index: 10;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 1px;
+
+    color: rgba(255,255,255,0.58);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    line-height: 1.2;
+
+    text-align: center;
+}
+
+
+.portfolio-about-location::after {
+    content: "";
+
+    width: 65px;
+
+    height: 1px;
+
+    margin-top: 3px;
+
+    background: rgba(74,151,178,0.65);
+}
+
+
+.portfolio-about-location span:last-child {
+    color: rgba(255,255,255,0.72);
+}
+
+
+/* =========================================================
+   FULLSCREEN
+   ========================================================= */
+
+.portfolio-about-fullscreen {
+    position: absolute;
+
+    right: 16px;
+
+    bottom: 14px;
+
+    z-index: 10;
+
+    width: 18px;
+    height: 18px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: rgba(255,255,255,0.90);
+
+    font-size: 15px;
+
+    line-height: 18px;
+
+    cursor: pointer;
+}
+
+
+.portfolio-about-fullscreen:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   HIDE OLD ABOUT COMPONENTS
+   ========================================================= */
+
+.portfolio-about
+.about-glow,
+.portfolio-about
+.identity-composition,
+.portfolio-about
+.identity-surface,
+.portfolio-about
+.identity-background-word,
+.portfolio-about
+.identity-hero,
+.portfolio-about
+.identity-support,
+.portfolio-about
+.identity-personal,
+.portfolio-about
+.identity-visual-details {
+    display: none !important;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .portfolio-about {
+        min-height: 100svh;
+        height: 100svh;
+    }
+
+
+    .portfolio-about-content {
+        grid-template-columns: 45% 55%;
+    }
+
+
+    .portfolio-about-copy {
+        padding-left: 8%;
+
+        padding-right: 3%;
+    }
+
+
+    .portfolio-about-copy h2 {
+        font-size: 17px;
+    }
+
+
+    .portfolio-about-email {
+        font-size: 7px;
+    }
+
+
+    .portfolio-about-description {
+        width: 210px;
+
+        margin-top: 28px;
+    }
+
+
+    .portfolio-about-description p {
+        font-size: 8px;
+
+        line-height: 1.45;
+    }
+
+
+    .portfolio-about-location {
+        left: 18%;
+
+        bottom: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .portfolio-about-content {
+        grid-template-columns: 1fr;
+    }
+
+
+    .portfolio-about-copy {
+        position: absolute;
+
+        left: 0;
+
+        top: 50%;
+
+        transform: translateY(-50%);
+
+        width: 55%;
+
+        padding-left: 9%;
+
+        padding-right: 0;
+
+        z-index: 5;
+    }
+
+
+    .portfolio-about-copy h2 {
+        font-size: 16px;
+    }
+
+
+    .portfolio-about-email {
+        font-size: 7px;
+    }
+
+
+    .portfolio-about-description {
+        width: 175px;
+
+        margin-top: 25px;
+    }
+
+
+    .portfolio-about-description p {
+        font-size: 7.5px;
+
+        line-height: 1.45;
+    }
+
+
+    .portfolio-about-portrait {
+        position: absolute;
+
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .portfolio-about-portrait::before {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(8,10,12,0.98) 0%,
+                rgba(8,10,12,0.84) 30%,
+                rgba(8,10,12,0.32) 60%,
+                rgba(8,10,12,0.48) 100%
+            );
+    }
+
+
+    .portfolio-about-portrait img {
+        object-position: center center;
+
+        filter:
+            grayscale(100%)
+            contrast(1.1)
+            brightness(0.68);
+    }
+
+
+    .portfolio-about-location {
+        left: 9%;
+
+        bottom: 15px;
+
+        font-size: 6.5px;
+    }
+
+
+    .portfolio-about-fullscreen {
+        right: 12px;
+
+        bottom: 12px;
+    }
+
+}
