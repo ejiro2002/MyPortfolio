@@ -5906,3 +5906,333 @@ a:focus-visible {
     }
 
 }
+
+/* =========================================================
+   FINAL MINIMAL PORTFOLIO NAVIGATION
+   ========================================================= */
+
+.portfolio-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 72px;
+
+    padding: 0 7vw;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    background: rgba(11, 11, 11, 0.92);
+
+    border-bottom: 1px solid rgba(242, 240, 236, 0.10);
+
+    z-index: 9999;
+
+    font-family: "Manrope", sans-serif;
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.portfolio-nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.portfolio-logo {
+    color: #f2f0ec;
+
+    text-decoration: none;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 25px;
+    font-weight: 500;
+
+    letter-spacing: -0.5px;
+
+    transition: opacity 0.3s ease;
+}
+
+
+.portfolio-logo:hover {
+    opacity: 0.6;
+}
+
+
+/* =========================================================
+   CENTER NAVIGATION
+   ========================================================= */
+
+.portfolio-nav-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 38px;
+}
+
+
+.portfolio-nav-link {
+    position: relative;
+
+    color: rgba(242, 240, 236, 0.55);
+
+    text-decoration: none;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+
+    transition: color 0.3s ease;
+}
+
+
+/* Small editorial line underneath */
+
+.portfolio-nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: -8px;
+
+    height: 1px;
+
+    background: #f2f0ec;
+
+    transform: scaleX(0);
+
+    transform-origin: center;
+
+    transition: transform 0.3s ease;
+}
+
+
+.portfolio-nav-link:hover {
+    color: #f2f0ec;
+}
+
+
+.portfolio-nav-link:hover::after,
+.portfolio-nav-link.active::after {
+    transform: scaleX(1);
+}
+
+
+.portfolio-nav-link.active {
+    color: #f2f0ec;
+}
+
+
+/* =========================================================
+   RIGHT SIDE
+   ========================================================= */
+
+.portfolio-nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 28px;
+}
+
+
+.portfolio-phone {
+    color: rgba(242, 240, 236, 0.48);
+
+    text-decoration: none;
+
+    font-size: 8px;
+    font-weight: 500;
+
+    letter-spacing: 1.5px;
+
+    transition: color 0.3s ease;
+}
+
+
+.portfolio-phone:hover {
+    color: #f2f0ec;
+}
+
+
+/* =========================================================
+   HAMBURGER
+   ========================================================= */
+
+.portfolio-menu-button {
+    width: 28px;
+    height: 22px;
+
+    padding: 0;
+
+    display: none;
+
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 7px;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+}
+
+
+.portfolio-menu-button span {
+    display: block;
+
+    width: 24px;
+    height: 1px;
+
+    background: #f2f0ec;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+
+/* Hamburger → X */
+
+.portfolio-menu-button.active span:first-child {
+    transform: translateY(4px) rotate(45deg);
+}
+
+
+.portfolio-menu-button.active span:last-child {
+    transform: translateY(-4px) rotate(-45deg);
+}
+
+
+/* =========================================================
+   REMOVE OLD NAVIGATION STYLES
+   ========================================================= */
+
+.navbar {
+    display: none !important;
+}
+
+
+/* =========================================================
+   MOBILE NAVIGATION
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .portfolio-navbar {
+        height: 62px;
+
+        padding: 0 6vw;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .portfolio-logo {
+        font-size: 23px;
+    }
+
+
+    .portfolio-nav-center {
+        position: fixed;
+
+        top: 62px;
+        left: 0;
+        right: 0;
+
+        width: 100%;
+
+        padding: 35px 6vw 40px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+
+        background: #0b0b0b;
+
+        border-bottom: 1px solid rgba(242, 240, 236, 0.12);
+
+        opacity: 0;
+        visibility: hidden;
+
+        transform: translateY(-10px);
+
+        transition:
+            opacity 0.3s ease,
+            visibility 0.3s ease,
+            transform 0.3s ease;
+    }
+
+
+    .portfolio-nav-center.active {
+        opacity: 1;
+        visibility: visible;
+
+        transform: translateY(0);
+    }
+
+
+    .portfolio-nav-link {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+
+    .portfolio-phone {
+        display: none;
+    }
+
+
+    .portfolio-menu-button {
+        display: flex;
+    }
+
+
+    .portfolio-nav-right {
+        gap: 0;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 390px) {
+
+    .portfolio-navbar {
+        padding: 0 5vw;
+    }
+
+
+    .portfolio-nav-center {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+}
