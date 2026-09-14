@@ -3775,3 +3775,718 @@ a:focus-visible {
     }
 
 }
+
+/* =========================================================
+   RESUME SECTION
+   REFERENCE DESIGN OVERRIDE
+   ========================================================= */
+
+.portfolio-resume {
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    background: #080a0c;
+
+    color: #ffffff;
+
+    overflow: hidden;
+
+    padding: 80px 7% 55px;
+
+    box-sizing: border-box;
+}
+
+
+/* ---------- BACKGROUND ---------- */
+
+.portfolio-resume::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(255,255,255,0.018),
+            transparent 48%
+        );
+
+    pointer-events: none;
+}
+
+
+/* ---------- MAIN CONTAINER ---------- */
+
+.portfolio-resume-inner {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1.1fr
+        1fr;
+
+    gap: 45px;
+}
+
+
+/* =========================================================
+   COLUMNS
+   ========================================================= */
+
+.resume-column {
+    min-width: 0;
+}
+
+
+/* =========================================================
+   BLOCKS
+   ========================================================= */
+
+.resume-block {
+    margin-bottom: 38px;
+}
+
+
+.resume-title {
+    position: relative;
+
+    margin: 0 0 20px;
+
+    padding-bottom: 9px;
+
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.04em;
+
+    line-height: 1;
+}
+
+
+.resume-title::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 32px;
+
+    height: 1px;
+
+    background: #5d9db5;
+}
+
+
+/* =========================================================
+   SOFTWARE SKILLS
+   ========================================================= */
+
+.resume-skill {
+    margin-bottom: 16px;
+}
+
+
+.resume-skill-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 6px;
+
+    color: rgba(255,255,255,0.78);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+
+    line-height: 1;
+}
+
+
+.resume-skill-top span:last-child {
+    color: rgba(255,255,255,0.45);
+
+    font-size: 7px;
+}
+
+
+.resume-progress {
+    width: 100%;
+
+    height: 2px;
+
+    background: rgba(255,255,255,0.13);
+
+    overflow: hidden;
+}
+
+
+.resume-progress span {
+    display: block;
+
+    height: 100%;
+
+    background: #5d9db5;
+}
+
+
+/* =========================================================
+   LANGUAGES
+   ========================================================= */
+
+.resume-language {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+
+.resume-language strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: rgba(255,255,255,0.82);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 500;
+}
+
+
+.resume-language span {
+    color: rgba(255,255,255,0.42);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+}
+
+
+.language-dots {
+    display: flex;
+
+    gap: 4px;
+}
+
+
+.language-dots i {
+    display: block;
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,0.35);
+
+    box-sizing: border-box;
+}
+
+
+.language-dots i.filled {
+    background: #5d9db5;
+
+    border-color: #5d9db5;
+}
+
+
+/* =========================================================
+   PERSONAL SKILLS
+   ========================================================= */
+
+.personal-skill {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 8px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+
+.personal-skill span {
+    color: rgba(255,255,255,0.72);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+}
+
+
+.personal-skill strong {
+    color: rgba(255,255,255,0.42);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   EXPERIENCE TIMELINE
+   ========================================================= */
+
+.resume-timeline {
+    position: relative;
+
+    padding-left: 18px;
+}
+
+
+.resume-timeline::before {
+    content: "";
+
+    position: absolute;
+
+    top: 4px;
+    bottom: 4px;
+
+    left: 3px;
+
+    width: 1px;
+
+    background: rgba(255,255,255,0.13);
+}
+
+
+.timeline-item {
+    position: relative;
+
+    padding-bottom: 30px;
+}
+
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+
+.timeline-dot {
+    position: absolute;
+
+    top: 2px;
+
+    left: -18px;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #5d9db5;
+
+    box-shadow:
+        0 0 0 3px #080a0c;
+}
+
+
+.timeline-date {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #5d9db5;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.08em;
+}
+
+
+.timeline-content h3 {
+    margin: 0 0 4px;
+
+    color: rgba(255,255,255,0.90);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+
+.timeline-company {
+    margin: 0 0 7px;
+
+    color: rgba(255,255,255,0.43);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+}
+
+
+.timeline-content > p:last-child {
+    margin: 0;
+
+    color: rgba(255,255,255,0.54);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7.5px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   EDUCATION
+   ========================================================= */
+
+.education-item {
+    display: flex;
+
+    gap: 15px;
+
+    padding-top: 2px;
+}
+
+
+.education-year {
+    flex-shrink: 0;
+
+    color: #5d9db5;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+}
+
+
+.education-item h3 {
+    margin: 0 0 5px;
+
+    color: rgba(255,255,255,0.85);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+
+.education-item p {
+    margin: 0;
+
+    color: rgba(255,255,255,0.45);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   WHAT CAN I DO
+   ========================================================= */
+
+.resume-list {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+.resume-list li {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 9px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+
+    color: rgba(255,255,255,0.68);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+}
+
+
+.resume-list li span {
+    color: #5d9db5;
+
+    font-size: 7px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   DESIGN SKILLS
+   ========================================================= */
+
+.design-skill {
+    margin-bottom: 13px;
+}
+
+
+.design-skill > span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: rgba(255,255,255,0.68);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+}
+
+
+.design-bar {
+    width: 100%;
+
+    height: 2px;
+
+    background: rgba(255,255,255,0.12);
+}
+
+
+.design-bar span {
+    display: block;
+
+    height: 100%;
+
+    background: #5d9db5;
+}
+
+
+/* =========================================================
+   HOBBIES
+   ========================================================= */
+
+.resume-hobbies {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+}
+
+
+.resume-hobbies span {
+    padding: 6px 9px;
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    color: rgba(255,255,255,0.55);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    transition:
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.resume-hobbies span:hover {
+    border-color: #5d9db5;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   FULLSCREEN
+   ========================================================= */
+
+.portfolio-resume-fullscreen {
+    position: absolute;
+
+    right: 16px;
+    bottom: 14px;
+
+    z-index: 10;
+
+    width: 18px;
+    height: 18px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: rgba(255,255,255,0.90);
+
+    font-size: 15px;
+
+    line-height: 18px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   REMOVE OLD SKILLS DESIGN
+   ========================================================= */
+
+.portfolio-resume
+.skills-header,
+.portfolio-resume
+.skill-feature,
+.portfolio-resume
+.skill-support-grid,
+.portfolio-resume
+.skill-panel,
+.portfolio-resume
+.skill-feature-grid,
+.portfolio-resume
+.skill-feature-head {
+    display: none !important;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .portfolio-resume {
+        min-height: 100vh;
+
+        padding: 75px 5% 50px;
+    }
+
+
+    .portfolio-resume-inner {
+        grid-template-columns:
+            1fr
+            1fr;
+
+        gap: 35px;
+    }
+
+
+    .resume-center {
+        order: 3;
+
+        grid-column: 1 / -1;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 35px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .portfolio-resume {
+        min-height: auto;
+
+        height: auto;
+
+        padding:
+            90px
+            8%
+            55px;
+    }
+
+
+    .portfolio-resume-inner {
+        display: block;
+    }
+
+
+    .resume-column {
+        width: 100%;
+    }
+
+
+    .resume-block {
+        margin-bottom: 35px;
+    }
+
+
+    .resume-title {
+        font-size: 11px;
+
+        margin-bottom: 17px;
+    }
+
+
+    .resume-center {
+        display: block;
+    }
+
+
+    .resume-skill-top {
+        font-size: 8px;
+    }
+
+
+    .resume-list li {
+        font-size: 8px;
+    }
+
+
+    .timeline-content > p:last-child {
+        font-size: 7.5px;
+    }
+
+
+    .portfolio-resume-fullscreen {
+        display: none;
+    }
+
+}
