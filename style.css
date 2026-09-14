@@ -4490,3 +4490,699 @@ a:focus-visible {
     }
 
 }
+
+/* =========================================================
+   PORTFOLIO / PROJECTS
+   MINIMAL EDITORIAL DESIGN
+   ========================================================= */
+
+.portfolio-section {
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 90px 7% 70px;
+
+    box-sizing: border-box;
+
+    background: #080a0c;
+
+    color: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+.portfolio-inner {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.portfolio-heading {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+    margin-bottom: 42px;
+}
+
+
+.portfolio-number {
+    padding-top: 5px;
+
+    color: #5d9db5;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 0.08em;
+}
+
+
+.portfolio-eyebrow {
+    margin: 0 0 7px;
+
+    color: #5d9db5;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.18em;
+}
+
+
+.portfolio-heading h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: clamp(28px, 4vw, 48px);
+
+    font-weight: 300;
+
+    letter-spacing: 0.02em;
+
+    line-height: 0.95;
+}
+
+
+/* =========================================================
+   FEATURED PROJECT
+   ========================================================= */
+
+.portfolio-featured {
+    display: grid;
+
+    grid-template-columns: 1.55fr 0.85fr;
+
+    min-height: 380px;
+
+    border-top: 1px solid rgba(255,255,255,0.14);
+
+    border-bottom: 1px solid rgba(255,255,255,0.14);
+}
+
+
+/* ---------- IMAGE ---------- */
+
+.portfolio-image {
+    position: relative;
+
+    min-height: 380px;
+
+    overflow: hidden;
+
+    background: #101316;
+}
+
+
+.portfolio-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.6s ease,
+        opacity 0.4s ease;
+}
+
+
+.portfolio-featured:hover
+.portfolio-image img {
+    transform: scale(1.025);
+
+    opacity: 0.88;
+}
+
+
+/* ---------- FEATURED INFO ---------- */
+
+.portfolio-featured-info {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 45px 40px;
+
+    border-left: 1px solid rgba(255,255,255,0.12);
+
+    box-sizing: border-box;
+}
+
+
+.portfolio-category {
+    display: block;
+
+    margin-bottom: 13px;
+
+    color: #5d9db5;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.12em;
+
+    line-height: 1.4;
+}
+
+
+.portfolio-featured-info h3,
+.portfolio-project-info h3 {
+    margin: 0 0 15px;
+
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 25px;
+
+    font-weight: 300;
+
+    letter-spacing: 0.02em;
+}
+
+
+.portfolio-featured-info p,
+.portfolio-project-info p {
+    max-width: 390px;
+
+    margin: 0 0 20px;
+
+    color: rgba(255,255,255,0.52);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 400;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   TECHNOLOGIES
+   ========================================================= */
+
+.portfolio-tech {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    margin-bottom: 24px;
+}
+
+
+.portfolio-tech span {
+    padding: 5px 7px;
+
+    border: 1px solid rgba(255,255,255,0.11);
+
+    color: rgba(255,255,255,0.42);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 6px;
+
+    letter-spacing: 0.06em;
+}
+
+
+/* =========================================================
+   VIEW PROJECT
+   ========================================================= */
+
+.portfolio-view {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    width: fit-content;
+
+    padding-bottom: 6px;
+
+    border-bottom: 1px solid #5d9db5;
+
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.1em;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        gap 0.2s ease;
+}
+
+
+.portfolio-view span {
+    color: #5d9db5;
+
+    font-size: 11px;
+}
+
+
+.portfolio-view:hover {
+    color: #5d9db5;
+
+    gap: 14px;
+}
+
+
+/* =========================================================
+   SECONDARY PROJECTS
+   ========================================================= */
+
+.portfolio-projects {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+    margin-top: 30px;
+}
+
+
+.portfolio-project {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1fr;
+
+    min-height: 230px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+
+/* ---------- PROJECT IMAGE ---------- */
+
+.portfolio-project-image {
+    height: 230px;
+
+    overflow: hidden;
+
+    background: #101316;
+}
+
+
+.portfolio-project-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+
+.portfolio-project:hover
+.portfolio-project-image img {
+    transform: scale(1.04);
+}
+
+
+/* ---------- PROJECT INFO ---------- */
+
+.portfolio-project-info {
+    padding: 15px 20px 25px;
+}
+
+
+.portfolio-project-info h3 {
+    font-size: 16px;
+
+    margin-bottom: 11px;
+}
+
+
+.portfolio-project-info p {
+    font-size: 7px;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+
+.portfolio-project-info .portfolio-tech {
+    margin-bottom: 15px;
+}
+
+
+.portfolio-project-info .portfolio-tech span {
+    font-size: 5.5px;
+
+    padding: 4px 5px;
+}
+
+
+/* =========================================================
+   PROJECT LINKS
+   ========================================================= */
+
+.portfolio-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+
+.portfolio-links a {
+    color: rgba(255,255,255,0.7);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 6px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+
+.portfolio-links a:hover {
+    color: #5d9db5;
+}
+
+
+/* =========================================================
+   ARRAY PRACTICE CODE VISUAL
+   ========================================================= */
+
+.portfolio-code-visual {
+    position: relative;
+
+    height: 230px;
+
+    padding: 28px 22px;
+
+    box-sizing: border-box;
+
+    background: #0d1012;
+
+    border-right: 1px solid rgba(255,255,255,0.08);
+
+    overflow: hidden;
+}
+
+
+.code-top {
+    display: flex;
+
+    gap: 5px;
+
+    margin-bottom: 28px;
+}
+
+
+.code-top span {
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.25);
+}
+
+
+.code-lines {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+}
+
+
+.code-lines i {
+    display: block;
+
+    height: 3px;
+
+    background: rgba(255,255,255,0.16);
+}
+
+
+.line-long {
+    width: 90%;
+}
+
+
+.line-medium {
+    width: 65%;
+}
+
+
+.line-short {
+    width: 42%;
+}
+
+
+/* =========================================================
+   FULLSCREEN
+   ========================================================= */
+
+.portfolio-projects-fullscreen {
+    position: absolute;
+
+    right: 16px;
+    bottom: 14px;
+
+    z-index: 10;
+
+    width: 18px;
+    height: 18px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: rgba(255,255,255,0.85);
+
+    font-size: 15px;
+
+    line-height: 18px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   HIDE OLD PROJECT DESIGN
+   ========================================================= */
+
+.portfolio-section
+.projects-container,
+.portfolio-section
+.projects-header,
+.portfolio-section
+.projects-layout,
+.portfolio-section
+.project-card,
+.portfolio-section
+.project-media,
+.portfolio-section
+.project-body,
+.portfolio-section
+.project-grid {
+    /* Old project styling is isolated from the new section */
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .portfolio-section {
+        padding: 85px 5% 60px;
+    }
+
+
+    .portfolio-featured {
+        grid-template-columns: 1fr;
+    }
+
+
+    .portfolio-image {
+        min-height: 320px;
+
+        height: 320px;
+    }
+
+
+    .portfolio-featured-info {
+        min-height: 300px;
+
+        border-left: none;
+
+        border-top: 1px solid rgba(255,255,255,0.12);
+
+        padding: 35px;
+    }
+
+
+    .portfolio-projects {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .portfolio-section {
+        min-height: auto;
+
+        padding:
+            90px
+            7%
+            55px;
+    }
+
+
+    .portfolio-heading {
+        margin-bottom: 30px;
+    }
+
+
+    .portfolio-heading h2 {
+        font-size: 32px;
+    }
+
+
+    .portfolio-featured {
+        display: block;
+    }
+
+
+    .portfolio-image {
+        height: 230px;
+
+        min-height: 230px;
+    }
+
+
+    .portfolio-featured-info {
+        min-height: auto;
+
+        padding: 28px 20px 32px;
+    }
+
+
+    .portfolio-featured-info h3 {
+        font-size: 22px;
+    }
+
+
+    .portfolio-featured-info p {
+        font-size: 8px;
+
+        line-height: 1.7;
+    }
+
+
+    .portfolio-projects {
+        display: block;
+
+        margin-top: 25px;
+    }
+
+
+    .portfolio-project {
+        display: block;
+
+        min-height: auto;
+
+        margin-bottom: 30px;
+    }
+
+
+    .portfolio-project-image,
+    .portfolio-code-visual {
+        height: 190px;
+
+        border-right: none;
+    }
+
+
+    .portfolio-project-info {
+        padding: 20px 0 25px;
+    }
+
+
+    .portfolio-project-info h3 {
+        font-size: 16px;
+    }
+
+
+    .portfolio-project-info p {
+        max-width: 100%;
+
+        font-size: 7.5px;
+    }
+
+
+    .portfolio-projects-fullscreen {
+        display: none;
+    }
+
+}
