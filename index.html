@@ -16,59 +16,58 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- ==================== NAVIGATION ==================== -->
-    <nav class="navbar portfolio-nav" aria-label="Primary navigation">
-        <div class="navbar-container">
+    <!-- ==================== MINIMAL NAVIGATION ==================== -->
+<nav class="portfolio-navbar" aria-label="Primary navigation">
 
-            <!-- Left Navigation -->
-            <ul class="navbar-menu" id="navbarMenu">
+    <div class="portfolio-nav-left">
 
-                <li class="nav-item">
-                    <a href="#home" class="nav-link active" data-section="home">
-                        Home
-                    </a>
-                </li>
+        <a href="#home" class="portfolio-logo">
+            Samuel.
+        </a>
 
-                <li class="nav-item">
-                    <a href="#about" class="nav-link" data-section="about">
-                        About
-                    </a>
-                </li>
+    </div>
 
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link" data-section="skills">
-                        Resume
-                    </a>
-                </li>
 
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link" data-section="projects">
-                        Portfolio
-                    </a>
-                </li>
+    <div class="portfolio-nav-center">
 
-            </ul>
+        <a href="#home" class="portfolio-nav-link active">
+            Home
+        </a>
 
-            <!-- Phone -->
-            <a href="tel:+2340000000000" class="nav-phone">
-                <span class="phone-icon">◧</span>
-                <span>+234 916 289 0899</span>
-            </a>
+        <a href="#about" class="portfolio-nav-link">
+            About
+        </a>
 
-            <!-- Mobile Menu -->
-            <button
-                class="hamburger"
+        <a href="#skills" class="portfolio-nav-link">
+            Resume
+        </a>
+
+        <a href="#projects" class="portfolio-nav-link">
+            Portfolio
+        </a>
+
+    </div>
+
+
+    <div class="portfolio-nav-right">
+
+        <a href="tel:+2340000000000" class="portfolio-phone">
+            +234 916 289 0899
+        </a>
+
+        <button class="portfolio-menu-button"
                 id="hamburger"
                 aria-label="Toggle navigation menu"
-                aria-expanded="false"
-            >
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
+                aria-expanded="false">
 
-        </div>
-    </nav>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+</nav>
 
 
     <!-- ==================== HOME / HERO ==================== -->
