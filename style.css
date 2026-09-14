@@ -2669,3 +2669,603 @@ a:focus-visible {
         padding: 0.8rem 0.9rem;
     }
 }
+
+
+/* =========================================================
+   PORTFOLIO REFERENCE DESIGN
+   HOME / HERO OVERRIDE
+   ========================================================= */
+
+
+/* ---------- NAVIGATION ---------- */
+
+.portfolio-nav {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 58px;
+
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+
+    z-index: 1000;
+}
+
+
+.portfolio-nav .navbar-container {
+    width: 100%;
+    max-width: none;
+
+    height: 58px;
+
+    padding: 0 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.portfolio-nav .navbar-menu {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.portfolio-nav .nav-item {
+    margin: 0;
+    padding: 0;
+}
+
+
+.portfolio-nav .nav-link {
+    position: relative;
+
+    display: block;
+
+    padding: 0;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: 0;
+
+    text-decoration: none;
+
+    transition: color 0.25s ease;
+}
+
+
+.portfolio-nav .nav-link::after {
+    display: none !important;
+}
+
+
+.portfolio-nav .nav-link:hover {
+    color: #ffffff;
+}
+
+
+.portfolio-nav .nav-link.active {
+    color: #5d9db5;
+}
+
+
+.nav-phone {
+    position: absolute;
+
+    top: 29px;
+    right: 13px;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+
+    gap: 4px;
+
+    color: rgba(255, 255, 255, 0.85);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 400;
+
+    text-decoration: none;
+}
+
+
+.phone-icon {
+    font-size: 7px;
+}
+
+
+.portfolio-nav .hamburger {
+    display: none;
+}
+
+
+/* =========================================================
+   HOME
+   ========================================================= */
+
+.portfolio-home {
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #090c0d;
+
+    /*
+       IMPORTANT:
+       Put your desktop/workspace background image here.
+
+       Example:
+       background-image: url("images/portfolio-home.jpg");
+    */
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(4, 7, 8, 0.94) 0%,
+            rgba(4, 7, 8, 0.78) 35%,
+            rgba(4, 7, 8, 0.35) 70%,
+            rgba(4, 7, 8, 0.48) 100%
+        ),
+        url("images/portfolio-home.jpg");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+/* Dark overlay */
+
+.portfolio-home-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 6, 7, 0.65) 0%,
+            rgba(3, 6, 7, 0.30) 55%,
+            rgba(3, 6, 7, 0.48) 100%
+        );
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+/* ---------- HERO TEXT ---------- */
+
+.portfolio-home-content {
+    position: relative;
+
+    z-index: 5;
+
+    margin-left: 8%;
+
+    margin-top: 20px;
+
+    width: 330px;
+}
+
+
+.portfolio-home-firstname {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 21px;
+
+    font-weight: 300;
+
+    line-height: 0.95;
+
+    letter-spacing: 0.02em;
+}
+
+
+.portfolio-home-name {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 38px;
+
+    font-weight: 800;
+
+    line-height: 0.95;
+
+    letter-spacing: -0.025em;
+}
+
+
+.portfolio-home-role {
+    margin: 7px 0 0;
+
+    color: rgba(255, 255, 255, 0.80);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    letter-spacing: 0.19em;
+
+    line-height: 1.2;
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+.portfolio-home-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+
+.portfolio-outline-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 62px;
+    height: 22px;
+
+    padding: 0 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.85);
+
+    border-radius: 999px;
+
+    color: #ffffff;
+
+    background: transparent;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 400;
+
+    text-decoration: none;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.portfolio-outline-btn:hover {
+    background: #ffffff;
+
+    border-color: #ffffff;
+
+    color: #101314;
+}
+
+
+/* ---------- SOCIAL ICONS ---------- */
+
+.portfolio-social {
+    position: absolute;
+
+    left: 8%;
+
+    bottom: 19px;
+
+    z-index: 10;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.portfolio-social a {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 14px;
+    height: 14px;
+
+    color: rgba(255, 255, 255, 0.90);
+
+    text-decoration: none;
+
+    font-family: "Font Awesome 6 Free",
+                 "Font Awesome 6 Brands",
+                 Arial,
+                 sans-serif;
+
+    font-size: 9px;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.portfolio-social a:hover {
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* ---------- FULLSCREEN ---------- */
+
+.portfolio-fullscreen {
+    position: absolute;
+
+    right: 16px;
+    bottom: 14px;
+
+    z-index: 10;
+
+    width: 18px;
+    height: 18px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: rgba(255, 255, 255, 0.90);
+
+    font-size: 15px;
+
+    line-height: 18px;
+
+    cursor: pointer;
+}
+
+
+.portfolio-fullscreen:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   REMOVE OLD HERO VISUAL SYSTEM
+   ========================================================= */
+
+.portfolio-home
+.hero-background,
+.portfolio-home
+.gradient-glow,
+.portfolio-home
+.floating-circle,
+.portfolio-home
+.hero-right,
+.portfolio-home
+.glow-circle,
+.portfolio-home
+.hero-portrait-shell,
+.portfolio-home
+.geometric-shape {
+    display: none !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .portfolio-nav {
+        height: 54px;
+    }
+
+    .portfolio-nav .navbar-container {
+        height: 54px;
+
+        padding: 0 16px;
+    }
+
+    .portfolio-nav .navbar-menu {
+        position: absolute;
+
+        top: 54px;
+        left: 0;
+        right: 0;
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 0;
+
+        padding: 15px 20px;
+
+        background: rgba(8, 11, 12, 0.97);
+
+        border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .portfolio-nav .navbar-menu.active {
+        display: flex;
+    }
+
+    .portfolio-nav .nav-item {
+        width: 100%;
+    }
+
+    .portfolio-nav .nav-link {
+        width: 100%;
+
+        padding: 11px 0;
+
+        font-size: 11px;
+    }
+
+    .portfolio-nav .hamburger {
+        position: absolute;
+
+        right: 15px;
+
+        display: flex;
+
+        width: 25px;
+        height: 22px;
+
+        padding: 0;
+
+        gap: 4px;
+
+        justify-content: center;
+    }
+
+    .portfolio-nav .hamburger-line {
+        width: 19px;
+        height: 1px;
+
+        background: #ffffff;
+    }
+
+    .nav-phone {
+        display: none;
+    }
+
+
+    .portfolio-home {
+        min-height: 100svh;
+
+        height: 100svh;
+
+        background-position: center center;
+    }
+
+
+    .portfolio-home-content {
+        margin-left: 8%;
+
+        width: 270px;
+    }
+
+
+    .portfolio-home-firstname {
+        font-size: 17px;
+    }
+
+
+    .portfolio-home-name {
+        font-size: clamp(30px, 10vw, 40px);
+    }
+
+
+    .portfolio-home-role {
+        font-size: 10px;
+
+        letter-spacing: 0.14em;
+    }
+
+
+    .portfolio-social {
+        left: 8%;
+
+        bottom: 18px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .portfolio-home-content {
+        margin-left: 9%;
+
+        width: 245px;
+    }
+
+
+    .portfolio-home-firstname {
+        font-size: 16px;
+    }
+
+
+    .portfolio-home-name {
+        font-size: 31px;
+    }
+
+
+    .portfolio-home-role {
+        font-size: 9px;
+    }
+
+
+    .portfolio-home-buttons {
+        gap: 8px;
+
+        margin-top: 16px;
+    }
+
+
+    .portfolio-outline-btn {
+        height: 21px;
+
+        min-width: 59px;
+
+        padding: 0 12px;
+
+        font-size: 8px;
+    }
+
+}
