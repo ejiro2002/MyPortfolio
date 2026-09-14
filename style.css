@@ -5186,3 +5186,456 @@ a:focus-visible {
     }
 
 }
+
+/* =========================================================
+   MINIMAL PORTFOLIO — CONTACT SECTION
+   ========================================================= */
+
+.portfolio-contact {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: #0b0b0b;
+    color: #f2f0ec;
+    overflow: hidden;
+
+    padding: 70px 7vw 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-family: "Manrope", sans-serif;
+}
+
+
+/* ---------- SECTION NUMBER ---------- */
+
+.contact-number {
+    position: absolute;
+    top: 72px;
+    right: 7vw;
+
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+    color: rgba(242, 240, 236, 0.45);
+}
+
+
+/* ---------- MAIN CONTENT ---------- */
+
+.contact-content {
+    max-width: 900px;
+    margin-top: 55px;
+}
+
+
+/* ---------- EYEBROW ---------- */
+
+.contact-eyebrow {
+    margin-bottom: 28px;
+
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: rgba(242, 240, 236, 0.55);
+}
+
+
+/* ---------- TITLE ---------- */
+
+.contact-title {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(90px, 13vw, 190px);
+    line-height: 0.78;
+    font-weight: 400;
+    letter-spacing: -5px;
+
+    color: #f2f0ec;
+}
+
+
+/* ---------- INTRO ---------- */
+
+.contact-intro {
+    max-width: 430px;
+
+    margin: 48px 0 0;
+
+    font-size: 13px;
+    line-height: 1.8;
+    font-weight: 400;
+
+    color: rgba(242, 240, 236, 0.58);
+}
+
+
+/* ---------- EMAIL ---------- */
+
+.contact-email-block {
+    margin-top: 55px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.contact-label {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+
+    color: rgba(242, 240, 236, 0.4);
+}
+
+
+.contact-email {
+    position: relative;
+
+    width: fit-content;
+
+    color: #f2f0ec;
+    text-decoration: none;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(25px, 3vw, 42px);
+    font-weight: 400;
+
+    transition: opacity 0.3s ease;
+}
+
+
+.contact-email::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+
+    width: 100%;
+    height: 1px;
+
+    background: rgba(242, 240, 236, 0.45);
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: transform 0.35s ease;
+}
+
+
+.contact-email:hover {
+    opacity: 0.7;
+}
+
+
+.contact-email:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* ---------- SOCIAL LINKS ---------- */
+
+.contact-socials {
+    display: flex;
+    gap: 35px;
+
+    margin-top: 42px;
+}
+
+
+.contact-socials a {
+    position: relative;
+
+    color: rgba(242, 240, 236, 0.7);
+    text-decoration: none;
+
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    transition: color 0.3s ease;
+}
+
+
+.contact-socials a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    width: 100%;
+    height: 1px;
+
+    background: currentColor;
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: transform 0.3s ease;
+}
+
+
+.contact-socials a:hover {
+    color: #f2f0ec;
+}
+
+
+.contact-socials a:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* ---------- BOTTOM AREA ---------- */
+
+.contact-footer {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    padding-top: 35px;
+
+    border-top: 1px solid rgba(242, 240, 236, 0.12);
+}
+
+
+/* ---------- LOCATION ---------- */
+
+.contact-location {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+
+.contact-location span {
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    color: rgba(242, 240, 236, 0.35);
+}
+
+
+.contact-location strong {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+
+    color: rgba(242, 240, 236, 0.7);
+}
+
+
+/* ---------- ROLE ---------- */
+
+.contact-role {
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+
+    color: rgba(242, 240, 236, 0.35);
+}
+
+
+/* ---------- FULLSCREEN BUTTON ---------- */
+
+.contact-fullscreen {
+    position: absolute;
+
+    right: 7vw;
+    bottom: 42px;
+
+    width: 34px;
+    height: 34px;
+
+    border: 1px solid rgba(242, 240, 236, 0.25);
+    border-radius: 50%;
+
+    background: transparent;
+
+    color: rgba(242, 240, 236, 0.65);
+
+    font-size: 18px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.contact-fullscreen:hover {
+    background: #f2f0ec;
+    color: #0b0b0b;
+    border-color: #f2f0ec;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .portfolio-contact {
+        min-height: 100svh;
+
+        padding: 55px 6vw 30px;
+    }
+
+
+    .contact-number {
+        top: 58px;
+        right: 6vw;
+
+        font-size: 9px;
+    }
+
+
+    .contact-content {
+        margin-top: 70px;
+    }
+
+
+    .contact-eyebrow {
+        margin-bottom: 24px;
+
+        font-size: 8px;
+        letter-spacing: 2.5px;
+    }
+
+
+    .contact-title {
+        font-size: clamp(72px, 21vw, 125px);
+
+        line-height: 0.8;
+        letter-spacing: -3px;
+    }
+
+
+    .contact-intro {
+        max-width: 310px;
+
+        margin-top: 35px;
+
+        font-size: 11px;
+        line-height: 1.75;
+    }
+
+
+    .contact-email-block {
+        margin-top: 40px;
+    }
+
+
+    .contact-email {
+        max-width: 100%;
+
+        font-size: clamp(21px, 6vw, 30px);
+
+        overflow-wrap: anywhere;
+    }
+
+
+    .contact-socials {
+        gap: 25px;
+        margin-top: 32px;
+    }
+
+
+    .contact-socials a {
+        font-size: 8px;
+        letter-spacing: 1.8px;
+    }
+
+
+    .contact-footer {
+        padding-top: 25px;
+    }
+
+
+    .contact-location span {
+        font-size: 7px;
+    }
+
+
+    .contact-location strong {
+        font-size: 9px;
+    }
+
+
+    .contact-role {
+        display: none;
+    }
+
+
+    .contact-fullscreen {
+        right: 6vw;
+        bottom: 28px;
+
+        width: 30px;
+        height: 30px;
+
+        font-size: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 390px) {
+
+    .portfolio-contact {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+
+    .contact-number {
+        right: 5vw;
+    }
+
+
+    .contact-title {
+        font-size: 68px;
+    }
+
+
+    .contact-intro {
+        font-size: 10px;
+        max-width: 280px;
+    }
+
+
+    .contact-email {
+        font-size: 19px;
+    }
+
+
+    .contact-socials {
+        gap: 20px;
+    }
+
+
+    .contact-fullscreen {
+        right: 5vw;
+    }
+
+}
