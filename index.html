@@ -1,879 +1,671 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Samuel Odeyemi - Frontend Developer & UI Enthusiast. Building beautiful, responsive web experiences from Ibadan, Nigeria.">
-    <meta name="theme-color" content="#0D1117">
-    <title>Samuel Odeyemi - Frontend Developer & UI Enthusiast</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Samuel Odeyemi — Developer building thoughtful digital experiences and modern web applications."
+  >
+
+  <meta name="theme-color" content="#f7f8fa">
+
+  <title>Samuel Odeyemi — Developer & Digital Creator</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- ==================== MINIMAL NAVIGATION ==================== -->
-<nav class="portfolio-navbar" aria-label="Primary navigation">
+  <div class="scroll-progress" id="scrollProgress"></div>
 
-    <div class="portfolio-nav-left">
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
 
-        <a href="#home" class="portfolio-logo">
-            Samuel.
-        </a>
+      <a href="#home" class="brand" aria-label="Samuel Odeyemi home">
+        SO<span class="brand-dot">.</span>
+      </a>
 
-    </div>
-
-
-    <ul class="portfolio-nav-center" id="navbarMenu">
-
-        <li>
-            <a href="#home" class="portfolio-nav-link nav-link active" data-section="home">
-                Home
-            </a>
-        </li>
-
-        <li>
-            <a href="#about" class="portfolio-nav-link nav-link" data-section="about">
-                About
-            </a>
-        </li>
-
-        <li>
-            <a href="#skills" class="portfolio-nav-link nav-link" data-section="skills">
-                Resume
-            </a>
-        </li>
-
-        <li>
-            <a href="#projects" class="portfolio-nav-link nav-link" data-section="projects">
-                Portfolio
-            </a>
-        </li>
-
-    </ul>
-
-
-    <div class="portfolio-nav-right">
-
-        <a href="tel:+2340000000000" class="portfolio-phone">
-            +234 916 289 0899
-        </a>
-
-        <button class="portfolio-menu-button hamburger"
-                id="hamburger"
-                aria-label="Toggle navigation menu"
-                aria-expanded="false">
-            <span></span>
-            <span></span>
-
-        </button>
-
-    </div>
-
-</nav>
-
-
-    <!-- ==================== HOME / HERO ==================== -->
-    <section id="home" class="portfolio-home">
-
-        <!-- Dark overlay -->
-        <div class="portfolio-home-overlay"></div>
-
-        <!-- Hero content -->
-        <div class="portfolio-home-content">
-
-            <p class="portfolio-home-firstname">
-                SAMUEL
-            </p>
-
-            <h1 class="portfolio-home-name">
-                ODEYEMI
-            </h1>
-
-            <p class="portfolio-home-role">
-                Frontend Developer
-            </p>
-
-            <div class="portfolio-home-buttons">
-
-                <a href="assets/Samuel-Odeyemi-CV.pdf"
-                class="portfolio-outline-btn"
-                download="Samuel-Odeyemi-CV.pdf">
-                    Resume
-                </a>
-
-                <a href="#projects"
-                class="portfolio-outline-btn">
-                    Portfolio
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- Social links -->
-        <div class="portfolio-social">
-
-            <a href="https://github.com/ejiro2002"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub">
-                <span></span>
-            </a>
-
-            <a href="https://www.linkedin.com/in/samuel-ejiro-2a3bb826a"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn">
-                <span></span>
-            </a>
-
-            <a href="mailto:samuelodeyemi122@gmail.com"
-            aria-label="Email">
-                <span></span>
-            </a>
-
-        </div>
-
-
-        <!-- Fullscreen icon -->
-        <button class="portfolio-fullscreen"
-                type="button"
-                aria-label="Fullscreen">
-            ⛶
-        </button>
-
-    </section>
-
-    <!-- ==================== ABOUT SECTION ==================== -->
-<section id="about" class="portfolio-about">
-
-    <!-- Dark background -->
-    <div class="portfolio-about-overlay"></div>
-
-    <!-- About content -->
-    <div class="portfolio-about-content">
-
-        <!-- Left side -->
-        <div class="portfolio-about-copy">
-
-            <h2>ABOUT</h2>
-
-            <p class="portfolio-about-email">
-                samuelodeyemi122@gmail.com
-            </p>
-
-            <div class="portfolio-about-description">
-
-                <p>
-                    Frontend Developer with experience specializing
-                    in responsive web development and modern
-                    interface design.
-                </p>
-
-                <p>
-                    I build clean, accessible and engaging digital
-                    experiences that combine thoughtful design
-                    with reliable frontend development.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- Right portrait -->
-        <div class="portfolio-about-portrait">
-
-            <img
-                src="images/SAM.png"
-                alt="Samuel Odeyemi — Frontend Developer"
-            >
-
-        </div>
-
-    </div>
-
-
-    <!-- Location -->
-    <div class="portfolio-about-location">
-
-        <span>Ibadan, Nigeria</span>
-
-        <span>Frontend Developer</span>
-
-    </div>
-
-
-    <!-- Fullscreen -->
-    <button
-        class="portfolio-about-fullscreen"
+      <button
+        class="menu-toggle"
+        id="menuToggle"
         type="button"
-        aria-label="Fullscreen">
-        ⛶
-    </button>
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
 
-</section>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
 
-        <!-- ==================== RESUME SECTION ==================== -->
-    <section id="skills" class="portfolio-resume">
+        <a
+          href="assets/Samuel-Odeyemi-CV.pdf"
+          class="nav-resume"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume <span aria-hidden="true">↗</span>
+        </a>
+      </div>
 
-        <div class="portfolio-resume-inner">
+    </nav>
+  </header>
 
-            <!-- ==================== LEFT COLUMN ==================== -->
-            <div class="resume-column resume-left">
+  <main>
 
-                <!-- Software Skills -->
-                <div class="resume-block">
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
 
-                    <h2 class="resume-title">SOFTWARE SKILLS</h2>
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow">
+            <span class="status-dot"></span>
+            DEVELOPER & DIGITAL CREATOR
+          </p>
 
-                    <div class="resume-skill">
-                        <div class="resume-skill-top">
-                            <span>HTML5</span>
-                            <span>90%</span>
-                        </div>
+          <h1>
+            I build digital
+            <span class="hero-heading-second">
+              <span class="outline-text">experiences</span><span class="blue-period">.</span>
+            </span>
+            <span class="hero-heading-third">with intention.</span>
+          </h1>
 
-                        <div class="resume-progress">
-                            <span style="width: 90%;"></span>
-                        </div>
-                    </div>
+          <p class="hero-description">
+            I'm Samuel Odeyemi, a developer passionate about creating
+            thoughtful, functional, and visually refined digital products.
+          </p>
 
+          <div class="hero-actions">
+            <a href="#projects" class="button button-primary">
+              Explore my work <span aria-hidden="true">↘</span>
+            </a>
 
-                    <div class="resume-skill">
-                        <div class="resume-skill-top">
-                            <span>CSS3</span>
-                            <span>85%</span>
-                        </div>
+            <a href="#contact" class="text-link">
+              Let's talk <span aria-hidden="true">↗</span>
+            </a>
+          </div>
 
-                        <div class="resume-progress">
-                            <span style="width: 85%;"></span>
-                        </div>
-                    </div>
-
-
-                    <div class="resume-skill">
-                        <div class="resume-skill-top">
-                            <span>JavaScript</span>
-                            <span>75%</span>
-                        </div>
-
-                        <div class="resume-progress">
-                            <span style="width: 75%;"></span>
-                        </div>
-                    </div>
-
-
-                    <div class="resume-skill">
-                        <div class="resume-skill-top">
-                            <span>Responsive Design</span>
-                            <span>90%</span>
-                        </div>
-
-                        <div class="resume-progress">
-                            <span style="width: 90%;"></span>
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <!-- Languages -->
-                <div class="resume-block">
-
-                    <h2 class="resume-title">LANGUAGES</h2>
-
-                    <div class="resume-language">
-                        <div>
-                            <strong>English</strong>
-                            <span>Fluent</span>
-                        </div>
-
-                        <div class="language-dots">
-                            <i class="filled"></i>
-                            <i class="filled"></i>
-                            <i class="filled"></i>
-                            <i class="filled"></i>
-                            <i class="filled"></i>
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <!-- Personal Skills -->
-                <div class="resume-block">
-
-                    <h2 class="resume-title">PERSONAL SKILLS</h2>
-
-                    <div class="personal-skills">
-
-                        <div class="personal-skill">
-                            <span>Creativity</span>
-                            <strong>90%</strong>
-                        </div>
-
-                        <div class="personal-skill">
-                            <span>Communication</span>
-                            <strong>85%</strong>
-                        </div>
-
-                        <div class="personal-skill">
-                            <span>Teamwork</span>
-                            <strong>90%</strong>
-                        </div>
-
-                        <div class="personal-skill">
-                            <span>Problem Solving</span>
-                            <strong>85%</strong>
-                        </div>
-
-                    </div>
-
-                </div>
-
+          <div class="hero-meta">
+            <div>
+              <span class="meta-label">BASED IN</span>
+              <span class="meta-value">Nigeria</span>
             </div>
-
-
-            <!-- ==================== CENTER COLUMN ==================== -->
-            <div class="resume-column resume-center">
-
-                <!-- Experience -->
-                <div class="resume-block experience-block">
-
-                    <h2 class="resume-title">EXPERIENCE</h2>
-
-
-                    <div class="resume-timeline">
-
-                        <div class="timeline-item">
-
-                            <span class="timeline-date">
-                                2024 — PRESENT
-                            </span>
-
-                            <div class="timeline-dot"></div>
-
-                            <div class="timeline-content">
-
-                                <h3>Frontend Developer</h3>
-
-                                <p class="timeline-company">
-                                    Freelance
-                                </p>
-
-                                <p>
-                                    Building responsive websites and
-                                    user-focused digital experiences using
-                                    modern frontend technologies.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="timeline-item">
-
-                            <span class="timeline-date">
-                                2023 — 2024
-                            </span>
-
-                            <div class="timeline-dot"></div>
-
-                            <div class="timeline-content">
-
-                                <h3>Web Developer</h3>
-
-                                <p class="timeline-company">
-                                    Freelance Projects
-                                </p>
-
-                                <p>
-                                    Designed and developed responsive
-                                    interfaces with a focus on clean
-                                    structure, usability and performance.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Education -->
-                <div class="resume-block education-block">
-
-                    <h2 class="resume-title">EDUCATION</h2>
-
-                    <div class="education-item">
-
-                        <span class="education-year">
-                            2022 — PRESENT
-                        </span>
-
-                        <div>
-
-                            <h3>Web Development</h3>
-
-                            <p>
-                                Frontend Development &amp; Digital Design
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- ==================== RIGHT COLUMN ==================== -->
-            <div class="resume-column resume-right">
-
-                <!-- What Can I Do -->
-                <div class="resume-block">
-
-                    <h2 class="resume-title">WHAT CAN I DO?</h2>
-
-                    <ul class="resume-list">
-
-                        <li>
-                            <span>01</span>
-                            Responsive Web Development
-                        </li>
-
-                        <li>
-                            <span>02</span>
-                            UI / Interface Development
-                        </li>
-
-                        <li>
-                            <span>03</span>
-                            Landing Page Development
-                        </li>
-
-                        <li>
-                            <span>04</span>
-                            Website Optimization
-                        </li>
-
-                        <li>
-                            <span>05</span>
-                            Mobile-first Development
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-                <!-- Design Skills -->
-                <div class="resume-block">
-
-                    <h2 class="resume-title">DESIGN SKILLS</h2>
-
-                    <div class="design-skills">
-
-                        <div class="design-skill">
-                            <span>UI Design</span>
-                            <div class="design-bar">
-                                <span style="width: 85%;"></span>
-                            </div>
-                        </div>
-
-                        <div class="design-skill">
-                            <span>Web Design</span>
-                            <div class="design-bar">
-                                <span style="width: 90%;"></span>
-                            </div>
-                        </div>
-
-                        <div class="design-skill">
-                            <span>Typography</span>
-                            <div class="design-bar">
-                                <span style="width: 80%;"></span>
-                            </div>
-                        </div>
-
-                        <div class="design-skill">
-                            <span>Visual Design</span>
-                            <div class="design-bar">
-                                <span style="width: 80%;"></span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Hobbies -->
-                <div class="resume-block">
-
-                    <h2 class="resume-title">HOBBIES &amp; INTERESTS</h2>
-
-                    <div class="resume-hobbies">
-
-                        <span>Music</span>
-                        <span>Design</span>
-                        <span>Technology</span>
-                        <span>Photography</span>
-                        <span>Learning</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Fullscreen -->
-        <button
-            class="portfolio-resume-fullscreen"
-            type="button"
-            aria-label="Fullscreen">
-            ⛶
-        </button>
-
-    </section>
-
-<!-- ==================== PORTFOLIO SECTION ==================== -->
-<section id="projects" class="portfolio-section">
-
-    <div class="portfolio-inner">
-
-        <!-- Header -->
-        <div class="portfolio-heading">
-            <span class="portfolio-number">03</span>
 
             <div>
-                <p class="portfolio-eyebrow">MY WORK</p>
-                <h2>PORTFOLIO</h2>
+              <span class="meta-label">FOCUS</span>
+              <span class="meta-value">Web Development</span>
             </div>
+          </div>
         </div>
 
-
-        <!-- Featured Project -->
-        <article class="portfolio-featured">
-
-            <div class="portfolio-image">
-                <img
-                    src="images/HomeDelyva.png"
-                    alt="Delyva delivery platform interface">
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <div class="portrait-topline">
+              <span>PORTFOLIO / 2026</span>
+              <span>001 — SO</span>
             </div>
 
-            <div class="portfolio-featured-info">
+            <img
+              src="images/SAM.png"
+              alt="Portrait of Samuel Odeyemi"
+              class="hero-portrait"
+            >
 
-                <span class="portfolio-category">
-                    DELIVERY PRODUCT FRONTEND
-                </span>
+            <div class="portrait-overlay"></div>
 
-                <h3>DELYVA</h3>
+            <div class="portrait-caption">
+              <span class="portrait-index">01</span>
 
-                <p>
-                    An on-demand delivery platform concept designed
-                    to simplify booking, order tracking, and delivery
-                    management for modern businesses.
-                </p>
+              <div>
+                <p class="portrait-name">Samuel Odeyemi</p>
+                <p class="portrait-role">Developer · Problem Solver</p>
+              </div>
 
-                <div class="portfolio-tech">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>JAVASCRIPT</span>
-                    <span>RESPONSIVE DESIGN</span>
-                </div>
-
-                <a
-                    href="https://github.com/ejiro2002/Rider-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="portfolio-view">
-                    VIEW PROJECT
-                    <span>↗</span>
-                </a>
-
+              <span class="portrait-arrow" aria-hidden="true">↗</span>
             </div>
+          </div>
 
-        </article>
+          <div class="hero-side-note">
+            <span class="side-note-line"></span>
+            <span>DESIGN-MINDED DEVELOPMENT</span>
+          </div>
 
-
-        <!-- Other Projects -->
-        <div class="portfolio-projects">
-
-            <!-- PeacePage -->
-            <article class="portfolio-project">
-
-                <div class="portfolio-project-image">
-                    <img
-                        src="images/peace.png"
-                        alt="PeacePage portfolio website">
-                </div>
-
-                <div class="portfolio-project-info">
-
-                    <span class="portfolio-category">
-                        PERSONAL / MARKETING WEBSITE
-                    </span>
-
-                    <h3>PEACEPAGE</h3>
-
-                    <p>
-                        A polished, brand-focused website built with
-                        responsive layouts, accessible navigation,
-                        clear content hierarchy, and strong
-                        calls-to-action.
-                    </p>
-
-                    <div class="portfolio-tech">
-                        <span>HTML5</span>
-                        <span>TAILWIND CSS</span>
-                        <span>RESPONSIVE</span>
-                    </div>
-
-                    <div class="portfolio-links">
-
-                        <a
-                            href="https://peace-okakpu-digital-marketing-exec.vercel.app"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            LIVE DEMO ↗
-                        </a>
-
-                        <a
-                            href="https://github.com/ejiro2002/PeacePage"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            GITHUB ↗
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- Array Practice -->
-            <article class="portfolio-project portfolio-code-project">
-
-                <div class="portfolio-code-visual">
-
-                    <div class="code-top">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <div class="code-lines">
-                        <i class="line-long"></i>
-                        <i class="line-medium"></i>
-                        <i class="line-short"></i>
-                        <i class="line-medium"></i>
-                        <i class="line-long"></i>
-                    </div>
-
-                </div>
-
-                <div class="portfolio-project-info">
-
-                    <span class="portfolio-category">
-                        JAVASCRIPT / PROBLEM SOLVING
-                    </span>
-
-                    <h3>ARRAY PRACTICE</h3>
-
-                    <p>
-                        A collection of JavaScript array exercises
-                        and solutions demonstrating practical
-                        problem solving, array methods, data
-                        manipulation, and JavaScript fundamentals.
-                    </p>
-
-                    <div class="portfolio-tech">
-                        <span>JAVASCRIPT</span>
-                        <span>ES6+</span>
-                        <span>ARRAY METHODS</span>
-                    </div>
-
-                    <div class="portfolio-links">
-
-                        <a
-                            href="https://github.com/ejiro2002/Array-Practice"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            GITHUB ↗
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
+          <div class="hero-orbit" aria-hidden="true">
+            <span>SO</span>
+          </div>
         </div>
 
-    </div>
+      </div>
 
+      <div class="hero-bottom container">
+        <span>SCROLL TO EXPLORE</span>
 
-    <!-- Fullscreen -->
-    <button
-        class="portfolio-projects-fullscreen"
-        type="button"
-        aria-label="Fullscreen">
-        ⛶
-    </button>
+        <a href="#about" aria-label="Scroll to about section">
+          <span class="scroll-arrow" aria-hidden="true">↓</span>
+        </a>
 
-</section>
-
-    <!-- ==================== CONTACT ==================== -->
-    <section id="contact" class="portfolio-contact">
-
-        <div class="contact-number">04</div>
-
-        <div class="contact-content">
-
-            <div class="contact-eyebrow">
-                GET IN TOUCH
-            </div>
-
-            <h1 class="contact-title">
-                LET'S<br>
-                TALK.
-            </h1>
-
-            <p class="contact-intro">
-                Have a project in mind, a question, or simply want to connect?
-                I'd love to hear from you.
-            </p>
-
-            <div class="contact-email-block">
-                <span class="contact-label">EMAIL</span>
-
-                <a href="mailto:samuelodeyemi122@gmail.com"
-                class="contact-email">
-                    samuelodeyemi122@gmail.com
-                </a>
-            </div>
-
-            <div class="contact-socials">
-
-                <a href="https://github.com/ejiro2002"
-                target="_blank"
-                rel="noopener noreferrer">
-                    GITHUB
-                </a>
-
-                <a href="https://www.linkedin.com/in/samuel-ejiro-2a3bb826a"
-                target="_blank"
-                rel="noopener noreferrer">
-                    LINKEDIN
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="contact-footer">
-
-            <div class="contact-location">
-                <span>BASED IN</span>
-                <strong>Ibadan, Nigeria</strong>
-            </div>
-
-            <div class="contact-role">
-                FRONTEND DEVELOPER
-            </div>
-
-        </div>
-
-        <button class="contact-fullscreen" aria-label="Fullscreen">
-            ⛶
-        </button>
-
+        <span class="hero-bottom-right">INDEPENDENTLY BUILT. THOUGHTFULLY DESIGNED.</span>
+      </div>
     </section>
 
-        <!-- ==================== FOOTER ==================== -->
-    <footer class="portfolio-footer">
+    <!-- About -->
+    <section class="about section section-light" id="about">
+      <div class="container">
 
-        <div class="footer-top">
+        <div class="section-heading">
+          <p class="eyebrow"><span>01</span> / ABOUT</p>
+          <h2>
+            More than code.
+            <span class="muted-heading">A way of thinking.</span>
+          </h2>
+        </div>
 
-            <div class="footer-brand">
-                <span class="footer-small">PORTFOLIO</span>
+        <div class="about-grid">
+          <div class="about-intro">
+            <p class="about-lead">
+              I care about how things work, how they feel, and why they matter.
+            </p>
 
-                <h2>
-                    SAMUEL<br>
-                    ODEYEMI
-                </h2>
+            <p>
+              My approach to development combines problem-solving with an
+              appreciation for clean interfaces, useful functionality, and
+              the small details that make digital experiences feel complete.
+            </p>
+
+            <p>
+              I enjoy turning ideas into practical web experiences and
+              continuously improving my skills through hands-on projects.
+            </p>
+
+            <a
+              href="assets/Samuel-Odeyemi-CV.pdf"
+              class="text-link about-resume"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View my resume <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="skills-panel">
+            <div class="skills-panel-header">
+              <span>TOOLKIT</span>
+              <span>CORE SKILLS</span>
             </div>
 
-
-            <div class="footer-links">
-
-                <a href="#home">HOME</a>
-                <a href="#about">ABOUT</a>
-                <a href="#skills">RESUME</a>
-                <a href="#projects">PORTFOLIO</a>
-                <a href="#contact">CONTACT</a>
-
+            <div class="skill-row" data-skill="90">
+              <div class="skill-info">
+                <span>HTML</span>
+                <span>01</span>
+              </div>
+              <div class="skill-track">
+                <span class="skill-fill"></span>
+              </div>
             </div>
 
-
-            <div class="footer-connect">
-
-                <span class="footer-small">CONNECT</span>
-
-                <a href="mailto:samuelodeyemi122@gmail.com">
-                    EMAIL
-                </a>
-
-                <a href="https://github.com/ejiro2002"
-                target="_blank"
-                rel="noopener noreferrer">
-                    GITHUB
-                </a>
-
-                <a href="https://www.linkedin.com/in/samuel-ejiro-2a3bb826a"
-                target="_blank"
-                rel="noopener noreferrer">
-                    LINKEDIN
-                </a>
-
+            <div class="skill-row" data-skill="85">
+              <div class="skill-info">
+                <span>CSS</span>
+                <span>02</span>
+              </div>
+              <div class="skill-track">
+                <span class="skill-fill"></span>
+              </div>
             </div>
+
+            <div class="skill-row" data-skill="75">
+              <div class="skill-info">
+                <span>JavaScript</span>
+                <span>03</span>
+              </div>
+              <div class="skill-track">
+                <span class="skill-fill"></span>
+              </div>
+            </div>
+
+            <div class="skill-row" data-skill="60">
+              <div class="skill-info">
+                <span>Responsive Design</span>
+                <span>04</span>
+              </div>
+              <div class="skill-track">
+                <span class="skill-fill"></span>
+              </div>
+            </div>
+
+            <div class="skills-footer">
+              <span>ALWAYS LEARNING</span>
+              <span class="blue-cross" aria-hidden="true">✳</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience section" id="experience">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow"><span>02</span> / JOURNEY</p>
+          <h2>
+            The work behind
+            <span class="muted-heading">the work.</span>
+          </h2>
+        </div>
+
+        <div class="experience-list">
+
+          <article class="experience-item">
+            <div class="experience-date">PRESENT</div>
+
+            <div class="experience-marker">
+              <span></span>
+            </div>
+
+            <div class="experience-content">
+              <p class="experience-type">DEVELOPMENT</p>
+              <h3>Building digital experiences</h3>
+              <p>
+                Developing web projects that bring together functionality,
+                responsive layouts, and a considered visual direction.
+              </p>
+            </div>
+
+            <span class="experience-number">01</span>
+          </article>
+
+          <article class="experience-item">
+            <div class="experience-date">ONGOING</div>
+
+            <div class="experience-marker">
+              <span></span>
+            </div>
+
+            <div class="experience-content">
+              <p class="experience-type">GROWTH</p>
+              <h3>Learning through building</h3>
+              <p>
+                Strengthening my frontend development skills through practical
+                experimentation, iteration, and personal projects.
+              </p>
+            </div>
+
+            <span class="experience-number">02</span>
+          </article>
 
         </div>
 
+      </div>
+    </section>
 
-        <div class="footer-bottom">
+    <!-- Projects -->
+    <section class="projects section section-light" id="projects">
+      <div class="container">
 
-            <span>
-                © 2026 SAMUEL ODEYEMI
-            </span>
+        <div class="projects-heading section-heading">
+          <div>
+            <p class="eyebrow"><span>03</span> / SELECTED WORK</p>
+            <h2>
+              Ideas made
+              <span class="muted-heading">real.</span>
+            </h2>
+          </div>
 
-            <span>
-                FRONTEND DEVELOPER
-            </span>
+          <p class="projects-intro">
+            A selection of projects exploring useful functionality,
+            thoughtful design, and the process of building for the web.
+          </p>
+        </div>
 
-            <a href="#home" class="footer-back-top">
-                BACK TO TOP ↑
+        <div class="projects-grid">
+
+          <!-- Project 01: Delyva -->
+          <article class="project-card project-featured">
+            <a
+              href="https://github.com/ejiro2002/Rider-app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-image-link"
+              aria-label="View Delyva project repository"
+            >
+              <div class="project-image project-image-delyva">
+                <img
+                  src="images/HomeDelyva.png"
+                  alt="Delyva delivery application preview"
+                  loading="lazy"
+                >
+
+                <span class="project-image-index">01 / 06</span>
+                <span class="project-image-arrow" aria-hidden="true">↗</span>
+              </div>
             </a>
 
+            <div class="project-info">
+              <div class="project-title-line">
+                <div>
+                  <p class="project-category">LOGISTICS · WEB APPLICATION</p>
+                  <h3>Delyva</h3>
+                </div>
+
+                <span class="project-status">
+                  <span></span> IN PROGRESS
+                </span>
+              </div>
+
+              <p class="project-description">
+                A delivery-focused application in development, designed
+                around the experience of connecting delivery needs with
+                practical digital solutions.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <a
+                href="https://github.com/ejiro2002/Rider-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                View repository <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 02: PeacePage -->
+          <article class="project-card">
+            <a
+              href="https://peace-okakpu-digital-marketing-exec.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-image-link"
+              aria-label="View PeacePage live project"
+            >
+              <div class="project-image project-image-peace">
+                <img
+                  src="images/peace.png"
+                  alt="PeacePage website preview"
+                  loading="lazy"
+                >
+
+                <span class="project-image-index">02 / 06</span>
+                <span class="project-image-arrow" aria-hidden="true">↗</span>
+              </div>
+            </a>
+
+            <div class="project-info">
+              <div class="project-title-line">
+                <div>
+                  <p class="project-category">DIGITAL PRESENCE · WEBSITE</p>
+                  <h3>PeacePage</h3>
+                </div>
+
+                <span class="project-status project-status-live">
+                  <span></span> LIVE
+                </span>
+              </div>
+
+              <p class="project-description">
+                A web experience created to present a digital marketing
+                professional and their work through a dedicated online presence.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <a
+                href="https://peace-okakpu-digital-marketing-exec.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                View live project <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 03: Array Practice -->
+          <article class="project-card">
+            <a
+              href="https://github.com/ejiro2002/Array-Practice"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-image-link"
+              aria-label="View Array Practice repository"
+            >
+              <div class="project-image project-image-array">
+                <div class="code-art" aria-hidden="true">
+                  <span class="code-art-label">JAVASCRIPT / ARRAYS</span>
+                  <span class="code-art-line"><i>const</i> projects = [</span>
+                  <span class="code-art-line code-art-indent">"ideas",</span>
+                  <span class="code-art-line code-art-indent">"logic",</span>
+                  <span class="code-art-line code-art-indent">"practice"</span>
+                  <span class="code-art-line">];</span>
+                  <span class="code-art-cursor"></span>
+                </div>
+
+                <span class="project-image-index">03 / 06</span>
+                <span class="project-image-arrow" aria-hidden="true">↗</span>
+              </div>
+            </a>
+
+            <div class="project-info">
+              <div class="project-title-line">
+                <div>
+                  <p class="project-category">LEARNING · JAVASCRIPT</p>
+                  <h3>Array Practice</h3>
+                </div>
+              </div>
+
+              <p class="project-description">
+                A collection of JavaScript array exercises focused on
+                practising core programming concepts and problem-solving.
+              </p>
+
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>Arrays</span>
+                <span>Logic</span>
+              </div>
+
+              <a
+                href="https://github.com/ejiro2002/Array-Practice"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                View repository <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 04: Placeholder -->
+          <article class="project-card project-placeholder">
+            <div class="project-image placeholder-image">
+              <span class="placeholder-symbol" aria-hidden="true">✳</span>
+              <span class="project-image-index">04 / 06</span>
+              <span class="placeholder-label">NEXT PROJECT</span>
+            </div>
+
+            <div class="project-info">
+              <p class="project-category">PROJECT SLOT 04</p>
+              <h3>Something new.</h3>
+              <p class="project-description">
+                A space for another project. This card is ready for your
+                next build, image, and project link.
+              </p>
+              <span class="placeholder-note">COMING SOON</span>
+            </div>
+          </article>
+
+          <!-- Project 05: Placeholder -->
+          <article class="project-card project-placeholder">
+            <div class="project-image placeholder-image placeholder-image-two">
+              <span class="placeholder-symbol" aria-hidden="true">◈</span>
+              <span class="project-image-index">05 / 06</span>
+              <span class="placeholder-label">NEXT PROJECT</span>
+            </div>
+
+            <div class="project-info">
+              <p class="project-category">PROJECT SLOT 05</p>
+              <h3>In the making.</h3>
+              <p class="project-description">
+                A dedicated space for a future experiment, application,
+                or digital experience.
+              </p>
+              <span class="placeholder-note">COMING SOON</span>
+            </div>
+          </article>
+
+          <!-- Project 06: Placeholder -->
+          <article class="project-card project-placeholder">
+            <div class="project-image placeholder-image placeholder-image-three">
+              <span class="placeholder-symbol" aria-hidden="true">⌘</span>
+              <span class="project-image-index">06 / 06</span>
+              <span class="placeholder-label">NEXT PROJECT</span>
+            </div>
+
+            <div class="project-info">
+              <p class="project-category">PROJECT SLOT 06</p>
+              <h3>More to explore.</h3>
+              <p class="project-description">
+                Another space to showcase a project as your portfolio
+                continues to grow.
+              </p>
+              <span class="placeholder-note">COMING SOON</span>
+            </div>
+          </article>
+
         </div>
 
-    </footer>
+        <div class="projects-footer">
+          <span>MORE IDEAS. MORE BUILDS.</span>
 
-    <!-- Scripts -->
-    <script src="script.js"></script>
+          <a
+            href="https://github.com/ejiro2002"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-link"
+          >
+            Explore my GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container">
+
+        <p class="eyebrow"><span>04</span> / GET IN TOUCH</p>
+
+        <div class="contact-main">
+          <h2>
+            Have an idea?
+            <span class="contact-second-line">
+              <span class="outline-text">Let's build it.</span>
+            </span>
+          </h2>
+
+          <p class="contact-description">
+            Have a project in mind, an opportunity to discuss, or simply
+            want to connect? My inbox is open.
+          </p>
+
+          <a
+            href="mailto:samuelodeyemi122@gmail.com"
+            class="button button-primary contact-button"
+          >
+            Get in touch <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="contact-links">
+          <a
+            href="mailto:samuelodeyemi122@gmail.com"
+            class="contact-link-item"
+          >
+            <span>EMAIL</span>
+            <span>samuelodeyemi122@gmail.com ↗</span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/samuel-ejiro-2a3bb826a"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-link-item"
+          >
+            <span>LINKEDIN</span>
+            <span>Let's connect ↗</span>
+          </a>
+
+          <a
+            href="https://github.com/ejiro2002"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-link-item"
+          >
+            <span>GITHUB</span>
+            <span>Explore my code ↗</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#home" class="brand footer-brand">
+        SO<span class="brand-dot">.</span>
+      </a>
+
+      <p>Designed with intention. Built with curiosity.</p>
+
+      <span class="footer-copyright">
+        © <span id="currentYear">2026</span> SAMUEL ODEYEMI
+      </span>
+
+      <a href="#home" class="back-to-top">
+        BACK TO TOP ↑
+      </a>
+    </div>
+  </footer>
+
+  <!-- Animation libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+  <!-- Your JavaScript files -->
+  <script src="script.js"></script>
+  <script src="premium-motion.js"></script>
+
 </body>
 </html>
